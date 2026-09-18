@@ -19,7 +19,7 @@ class PedidoSchema(BaseModel):
 
 
 class LoginSchema(BaseModel):
-    login: str
+    email: str
     senha: str
 
     class Config:

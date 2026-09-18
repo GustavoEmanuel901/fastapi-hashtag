@@ -18,9 +18,9 @@ class Usuario(Base):
 
     def __init__(self, nome, email, senha, ativo=True, admin=False): 
         self.nome = nome
-        self.email = email,
-        self.senha = senha,
-        self.ativo = ativo,
+        self.email = email
+        self.senha = senha
+        self.ativo = ativo
         self.admin = admin
 
 class Pedido(Base): 
@@ -40,7 +40,7 @@ class Pedido(Base):
 
     def __init__(self, usuario, status="PENDENTE", preco=0): 
         self.usuario = usuario
-        self.status = status,
+        self.status = status
         self.preco = preco
 
 class ItemPedido(Base): 
